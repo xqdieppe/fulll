@@ -1,0 +1,6 @@
+#!/bin/node
+
+const mysql = require('./mysql');
+mysql.query(`CREATE TABLE IF NOT EXISTS fleets (id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, vehicles_ids LONGTEXT);`);
+mysql.query(`CREATE TABLE IF NOT EXISTS vehicles (id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, plate VARCHAR(32), lat INT, lng INT, alt INT);`);
+mysql.end()

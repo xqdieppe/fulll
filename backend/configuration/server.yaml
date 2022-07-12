@@ -1,0 +1,6 @@
+https:
+  key: tls/key.pem
+  cert: tls/cert.pem
+  port: 4000 
+http:
+  port: 3000
